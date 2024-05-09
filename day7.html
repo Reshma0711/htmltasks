@@ -1,0 +1,78 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>textarea</h1>
+        <label fpr="add">Address</label>
+        <textarea name="add" id="add" rows="5" cols="30" autofocus></textarea>
+
+        <h1>select tag</h1>
+        <label for="party">Choose your party</label>
+        <select id="party" name="party">
+            <option>tdp</option>
+            <option>ycp</option>
+            <option>jsp</option>
+            <option>bjp</option>
+            <option>cong</option>
+            <option>others</option>
+        </select><br><br>
+        <label for="party">Choose your party</label>
+        <select id="party" name="party" multiple>
+            <option>tdp</option>
+            <option selected>ycp</option>
+            <option>jsp</option>
+            <option>bjp</option>
+            <option>cong</option>
+            <option>others</option>
+        </select><br><br>
+
+        <label for="party">Choose your party</label>
+        <select id="party" name="party">
+            <option value="tdp">tdp</option>
+            <option value="tdp">ycp</option>
+            <option value="tdp">jsp</option>
+            <option value="tdp">bjp</option>
+            <option value="tdp">cong</option>
+            <option value="tdp">others</option>
+        </select><br><br>
+
+        <label for="party">Choose your party</label>
+        <select id="party" name="party" multiple autofocus >
+            <optgroup label="gr1">
+            <option>tdp</option>
+            <option>ycp</option>
+            </optgroup>
+        <optgroup  label="gr2">
+            <option>jsp</option>
+            <option>bjp</option>
+            <option>cong</option>
+            <option>others</option>
+        </optgroup>
+        </select><br><br>
+        <input type="submit">
+     </form>
+     <form> 
+        <label for="clr">choose your colour</label>
+        <input  type="list" id="clr" list="clrs" name="clr">
+        <datalist id="clrs">
+            <option value="1">yellow</option>
+            <option value="2">green</option>
+            <option value="3">blue</option>
+            <option value="4">red</option>
+            <option value="5">orange</option>
+        </datalist>
+       
+
+        <input type="submit">
+
+    </form>
+</body>
+
+</html>
