@@ -1,0 +1,124 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table,
+        td,
+        th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 1px;
+            spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>Registration Form</h1>
+        </legend>
+        <form>
+            <center>
+                <label for="name">Enter First Name</label>
+                <input type="text" id="name">
+
+                <label for="name">Enter Last Name</label>
+                <input type="text" id="name"> <br><br>
+
+                <label for="datetime">Enter Date-Time</label>
+                <input type="datetime-local" id="datetime">
+
+                <label for="email">Enter Mail ID</label>
+                <input type="email" id="email" required> <br><br>
+
+                <label for="Mobile number">Enter Mobile Number</label>
+                <input type="tel" id="number" name="Mobile number" pattern="(?=.*[0-9](10)">
+
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+
+         <p>Gender</p>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="Female" name="gender">
+                <label for="Female">Female</label>
+                <input type="radio" id="Other" name="gender">
+                <label for="other">Other</label> <br>
+
+                <label for="Address">Address</label>
+                <input type="text" size="30" id="Address">
+                <label for="city">City</label>
+                <input type="text" id="text"><br><br>
+                <label for="Pincode">Pincode</label>
+                <input type="pincode" id="Pincode" maxlength="6">
+                <label for="state">State</label>
+                <input type="text" id="state">
+                <label for="country">Country</label>
+                <input type="text" id="country"><br>
+
+                <p> Qualification</p>
+                <table>
+                    <tr>
+                        <th>sno</th>
+                        <th>Qualification</th>
+                        <th>YOP</th>
+                        <th>Institute name</th>
+                        <th>Percentage</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text"></td>
+                        <td><input type=""></td>
+                        <td><input type="text"></td>
+                        <td><input type="percentage"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="percentage"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td<input type="percentage">
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="percentage"></td>
+                    </tr>
+                </table><br>
+                
+<label for="marksheets">Marksheets</label>
+                <input type="file" multiple accept=".pdf,.doc">
+                <p>Courses Applied for</p>
+                <input type="checkbox" id="Front-end" name="course">
+                <label for="Front-end">Front-end</label>
+                <input type="checkbox" id="back-end" name="course">
+                <label for="back-end">Back-end</label>
+                <input type="checkbox" id="SAP" name="course">
+                <label for="SAP">SAP</label>
+                <input type="checkbox" id="service-now" name="course">
+                <label for="service-now">Service-now</label><br><br>
+
+                <input type="submit" id="submit">
+
+                <input type="Reset" id="Reset">
+            </center>
+        </form>
+    </fieldset>
+</body>
+
+</html>
